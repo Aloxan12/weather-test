@@ -1,0 +1,30 @@
+.NavPageContainer{
+    margin-bottom: 20px;
+}
+.NavPageContainer a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+    letter-spacing: 1.4px;
+}
+.NavPageContainer a:hover{
+    border-bottom: 1px solid black;
+}
+.changeCity{
+    text-align: center;
+    margin: 10px 0;
+}
+.changeCity button{
+    background: #efe9e9;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.changeCity input{
+    border: none;
+    outline:none;
+    border-bottom: 1px solid black;
+    padding: 7px;
+    margin-left: 10px;
+}
