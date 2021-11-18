@@ -23,17 +23,13 @@ export const routes = [
         exact: true,
         component: CityList
     },
+    {
+        id: "CityDetails",
+        path: '/weather/:title/details',
+        exact: true,
+        component: CityList
+    },
 ];
-
-export const getRouteConfig = (id: any) => {
-    const route = routes.find(route => route.id === id);
-
-    if(route) {
-        const { component, ...rest } = route;
-
-        return rest;
-    }
-}
 
 const Routes = () => {
     return (

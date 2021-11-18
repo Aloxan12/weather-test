@@ -5,6 +5,7 @@ import {NavPage} from "./NavPage";
 import {useDispatch, useSelector} from "react-redux";
 import {setWeatherT} from "../BLL/mainReducer";
 import {RootReduxStateType, store} from "../BLL/store";
+import { Link } from "react-router-dom";
 
 
 type ParamTypes = {
@@ -36,10 +37,11 @@ export const CityList: React.FC<{}> = () => {
         <div className='CityListContainer'>
             <NavPage />
             <div className='CityListBlock'>
-                <h2>Город: {title ? title : 'Минск'}</h2>
+                <h2>Город: {title}</h2>
                 <div>Температура сегодня ({today.toLocaleDateString()}): {celsiusTemp(temp)} &#xb0;С</div>
                 <div>Температура завтра({tomorrowDt.toLocaleDateString()}): {celsiusTemp(tomorrow)} &#xb0;С</div>
                 <div>Температура послезавтра ({afterTomorrowDt.toLocaleDateString()}): {celsiusTemp(tempAfterTomorrow)} &#xb0;С</div>
+                <Link to='/'>Подробнее</Link>
             </div>
         </div>
     )
