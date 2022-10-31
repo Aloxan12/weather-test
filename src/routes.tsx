@@ -3,6 +3,7 @@ import React from 'react';
 import {App} from "./App";
 import {NavPage} from "./UI/NavPage";
 import {CityList} from "./UI/CityList";
+import { NotFound } from './UI/NotFound';
 
 export const routes = [
     {
@@ -28,6 +29,11 @@ export const routes = [
         path: '/weather/:title/details',
         exact: true,
         component: CityList
+    },
+    {
+        id: "notFound",
+        path: '*',
+        component: NotFound
     },
 ];
 
