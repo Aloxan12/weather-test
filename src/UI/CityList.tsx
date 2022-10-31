@@ -4,7 +4,7 @@ import {useParams} from "react-router";
 import {NavPage} from "./NavPage";
 import {useDispatch, useSelector} from "react-redux";
 import {setWeatherT} from "../BLL/mainReducer";
-import {RootReduxStateType, store} from "../BLL/store";
+import {RootReduxStateType} from "../BLL/store";
 import { Link } from "react-router-dom";
 
 
@@ -25,7 +25,7 @@ export const CityList: React.FC<{}> = () => {
 
     useEffect(()=>{
         dispatch(setWeatherT(title))
-    },[title])
+    },[dispatch, title])
 
     function celsiusTemp(temp: number){
         return Math.floor(temp) - 273;

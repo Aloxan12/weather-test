@@ -1,6 +1,6 @@
 import {Route, Switch} from 'react-router-dom';
 import React from 'react';
-import App from "./App";
+import {App} from "./App";
 import {NavPage} from "./UI/NavPage";
 import {CityList} from "./UI/CityList";
 
